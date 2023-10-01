@@ -4,6 +4,7 @@ import { useState } from "react";
 import AddTodo from "./AddTodo";
 import TodoList from "./TodoList";
 import todosReducer from "./todosReducer";
+import CompletedTodo from "./completedTodo";
 
 const initialTodos = [
   { id: 1, text: "Learn Javascript", done: true },
@@ -24,7 +25,7 @@ export default function TodoApp() {
         <h2>Todos</h2>
       <AddTodo/>
       <TodoList />
-
+        <CompletedTodo />
      </TodosDispatchContext.Provider>
    </TodosContext.Provider>
     
